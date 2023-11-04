@@ -17,7 +17,8 @@ return new class extends Migration
             $table->string('name', 255);
             $table->foreignId('place_type_id');
             $table->text('description');
-            $table->string('location', 255);
+            $table->decimal('latitude', 10, 8);
+            $table->decimal('longitude', 11, 8);
             $table->string('address', 255);
             $table->string('image_path', 255)->nullable();
         });

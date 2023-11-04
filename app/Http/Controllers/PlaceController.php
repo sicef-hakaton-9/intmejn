@@ -9,7 +9,7 @@ class PlaceController extends Controller
 {
     public function index()
     {
-        $places = Place::all();
+        $places = Place::with('place_type')->get();
         return inertia('Places/Index', [
             'places' => $places,
         ]);
@@ -17,6 +17,7 @@ class PlaceController extends Controller
 
     public function show(Place $place)
     {
+        $place->load('place_type');
         return inertia('Places/Show', [
             'place' => $place,
         ]);
