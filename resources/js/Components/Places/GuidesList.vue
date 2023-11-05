@@ -21,9 +21,9 @@
                 class="divide-y divide-gray-200 dark:divide-gray-700"
             >
                 <li v-for="guide in guides" :key="guide.id">
-                    <Link
+                    <div
                         :href="'/vodic/' + guide.id"
-                        class="block py-3 sm:py-4 hover:bg-gray-50 dark:hover:bg-gray-700"
+                        class="cursor-pointer block py-3 sm:py-4 hover:bg-gray-50 dark:hover:bg-gray-700"
                     >
                         <div class="flex items-center space-x-4">
                             <div class="flex-shrink-0">
@@ -70,26 +70,30 @@
                                 class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white"
                             >
                                 <div>
-                                    <Link
+                                    <button
                                         class="mt-2 text-white bg-blue-400 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center mr-2"
+                                        @click="sendNotification"
                                     >
                                         <CheckMarkOutline
                                             class="w-4 h-4 mr-1"
                                         />
-                                        Unajmi vodiča
-                                    </Link>
+                                        Unajmi vodica
+                                    </button>
                                 </div>
                             </div>
                         </div>
-                    </Link>
+                    </div>
                 </li>
             </ul>
         </div>
     </div>
+    <PushNotification v-if="isSent" />
 </template>
 
 <script setup>
+import { ref } from "vue";
 import CheckMarkOutline from "~icons/carbon/checkmark-outline";
+import PushNotification from "@/Components/PushNotification.vue";
 // defineProps(["guides"]);
 
 let guides = [
@@ -108,4 +112,12 @@ let guides = [
         image_path: "users/profile-picture-2.jpg",
     },
 ];
+
+let isSent = ref(false);
+let sendNotification = (e) => {
+    e.target.innerText = "Poslato";
+    setTimeout(() => {
+        isSent.value = true;
+    }, 500);
+};
 </script>
