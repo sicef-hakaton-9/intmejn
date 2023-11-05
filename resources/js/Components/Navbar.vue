@@ -126,9 +126,9 @@
                     </li>
                     <li>
                         <a
-                            href="/znamenitosti"
+                            href="/mesta"
                             class="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0"
-                            >Znamenitosti</a
+                            >Mesta</a
                         >
                     </li>
                     <li>

@@ -54,5 +54,39 @@ class PlaceSeeder extends Seeder
             'address' => 'Bulevar Nikole Tesle bb',
             'image_path' => 'places/aleksica-tvrdjava.jpg'
         ]);
+        Place::create([
+            'id' => 4,
+            'name' => 'Galija',
+            'place_type_id' => 2, // restoran
+            'description' => 'Neka tradicionalna kafana je pravo mesto gde se osećate kao da ste zakoračili unazad u vreme prošlih epoha. Dok ulazite kroz teška drvena vrata, dočekuje vas prijatan miris dima i domaće kuhinje. Unutrašnjost kafane odiše rustičnim šarmom, sa drvenim stolovima i stolicama koje su već decenijama svedoci priča i događaja. Zidovi su prekriveni autentičnim fotografijama, šarama i zlatnim okvirom, koji svedoče o bogatom istorijskom nasleđu ovog mesta. Svetlo je blago i topla, a u pozadini se čuje živa muzika sa tamburama i violončelima. Kafana je prepuna gostiju koji uživaju u tradicionalnim specijalitetima kao što su ćevapi, sarma, i karađorđeva šnicla, serviranim na drvenim posudama. Ovde se često organizuju i večeri sa narodnom muzikom, gde posetioci mogu da uživaju u pesmama i igri, stvarajući nezaboravne trenutke u ovoj oazi tradicije i topline.',
+            'latitude' => 43.31822613397399,
+            'longitude' => 21.895838328835733,
+            'address' => 'Nikole Pasica 36',
+            'image_path' => 'places/galija.jpg'
+        ]);
+        Place::create([
+            'id' => 5,
+            'name' => 'Delta planet',
+            'place_type_id' => 4, // trzni centar
+            'description' => 'Prvi Delta Planet u Srbiji, sa 40.000 m2 i 850 parking mesta, otvorio je svoja vrata na uglu Bulevara Nemanjića.
+                Lokacija je savršeno povezana lokalnim saobraćajem sa svim glavnim zonama grada, u naseljenom delu šireg centra, i zasigurno je nova omiljena destinacija posetilaca svih uzrasta.
+                Najveći šoping centar Niša dom je mnogobrojnih domaćih i inostranih brendova, a mnogi od njih se baš u Delta Planetu prvi put predstavljaju na tržištu.
+                Svojom raznovrsnom ponudom Delta Planet će pružiti ljubiteljima šopinga uživanje u aktuelnim modnim kolekcijama, a raznovrsnost zabavnih sadržaja, kafića i restorana će pretvoriti svaku posetu u pravi izlazak!
+                Delta Planet – prepustite se carskom doživljaju.',
+            'latitude' => 43.32464102356252, 
+            'longitude' => 21.910989794499383,
+            'address' => 'Bulevar Nemanjica 25',
+            'image_path' => 'places/delta-planet.jpg'
+        ]);
+        Place::create([
+            'id' => 6,
+            'name' => 'Forum',
+            'place_type_id' => 4, // trzni centar
+            'description' => 'Forum šoping centar nalazi se u samom centru Niša, u Obrenovićevoj 42. Projekat i enterijer uradio je renomirani arhitektonski biro Chapmann Taylor, odnosno Chapman Taylor Architteti. Na prostoru od 11.000 kvadratnih metara, nalazi se 40 lokala, sa više od 80 modnih brendova odeće, obuće i tehnike, kao i menjačnica, trafika, poslovni prostor i velika garaža.',
+            'latitude' => 43.31904071700369, 
+            'longitude' => 21.89467298015131,
+            'address' => 'Obrenoviceva 46',
+            'image_path' => 'places/forum.jpg'
+        ]);
     }
 }

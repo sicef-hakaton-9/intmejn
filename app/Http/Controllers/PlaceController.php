@@ -9,7 +9,9 @@ class PlaceController extends Controller
 {
     public function index()
     {
-        $places = Place::with('place_type')->get();
+        $places = Place::with('place_type')->when(request('tip'), function ($query) {
+            $query->where('place_type_id', request('tip'));
+        })->get();
         return inertia('Places/Index', [
             'places' => $places,
         ]);

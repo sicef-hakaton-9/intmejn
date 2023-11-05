@@ -23,8 +23,8 @@ Route::get('/', function () {
 Route::get('/dogadjaji', [App\Http\Controllers\EventController::class, 'index'])->name('events.index');
 Route::get('/dogadjaji/{event}', [App\Http\Controllers\EventController::class, 'show'])->name('events.show');
 
-Route::get('/znamenitosti', [App\Http\Controllers\PlaceController::class, 'index'])->name('places.index');
-Route::get('/znamenitosti/{place}', [App\Http\Controllers\PlaceController::class, 'show'])->name('places.show');
+Route::get('/mesta', [App\Http\Controllers\PlaceController::class, 'index'])->name('places.index');
+Route::get('/mesta/{place}', [App\Http\Controllers\PlaceController::class, 'show'])->name('places.show');
 
 Route::get('/map', function () {
     $places = App\Models\Place::with('place_type')->get();
