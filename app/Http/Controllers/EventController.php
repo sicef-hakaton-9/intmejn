@@ -9,7 +9,7 @@ class EventController extends Controller
 {
     public function index()
     {
-        $events = Event::with('place')->get();
+        $events = Event::all();
         return inertia('Events/Index', [
             'events' => $events,
         ]);
@@ -17,7 +17,6 @@ class EventController extends Controller
 
     public function show(event $event)
     {
-        $event->load('place');
         return inertia('Events/Show', [
             'event' => $event,
         ]);

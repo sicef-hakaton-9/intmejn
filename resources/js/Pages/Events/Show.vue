@@ -17,7 +17,7 @@
                     <span>
                         <Location class="w-4 h-4 inline-block mr-1" />
                     </span>
-                    {{ event.place.location }}
+                    {{ event.address }}
                 </a>
                 <p class="text-gray-700 dark:text-gray-400">
                     <span>
@@ -27,7 +27,7 @@
                 </p>
             </div>
             <img
-                :src="'images/' + event.image_path"
+                :src="'/images/' + event.image_path"
                 :alt="event.name"
                 class="w-auto h-96 rounded-lg mt-2"
             />
@@ -69,7 +69,13 @@
             </div>
             <div id="location" class="mt-24 w-full flex flex-col items-center">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2902.1882069839457!2d21.89029628607042!3d43.33125058016122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4755b733e02e006f%3A0x2fd8f95c1eacfcfb!2sFaculty%20of%20Electronic%20Engineering!5e0!3m2!1sen!2srs!4v1699122345909!5m2!1sen!2srs"
+                    :src="
+                        'https://maps.google.com/maps?q=' +
+                        event.latitude +
+                        ',' +
+                        event.longitude +
+                        '&t=&z=15&ie=UTF8&iwloc=&output=embed'
+                    "
                     width="600"
                     height="450"
                     style="border: 0"

@@ -17,10 +17,13 @@ return new class extends Migration
             $table->string('name', 255);
             $table->text('description');
             $table->foreignId('event_type_id');
-            $table->foreignId('place_id');
+            $table->decimal('latitude', 10, 8);
+            $table->decimal('longitude', 11, 8);
+            $table->string('address', 255);
             $table->string('image_path')->nullable();
             $table->date('start_date');
             $table->date('end_date');
+            $table->integer('user_count');
         });
     }
 

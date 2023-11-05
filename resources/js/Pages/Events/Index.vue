@@ -37,7 +37,7 @@
                     <span>
                         <Location class="w-4 h-4 inline-block mr-1" />
                     </span>
-                    {{ event.place.location }}
+                    {{ event.address }}
                 </p>
             </div>
         </Link>
