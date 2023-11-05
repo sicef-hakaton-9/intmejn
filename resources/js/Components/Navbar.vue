@@ -22,7 +22,7 @@
                     <span class="sr-only">Open user menu</span>
                     <img
                         class="w-8 h-8 rounded-full"
-                        src="https://flowbite.com/docs/images/people/profile-picture-3.jpg"
+                        src="/images/users/profile-picture-1.jpg"
                         alt="user photo"
                     />
                 </button>
@@ -119,16 +119,16 @@
                     </li>
                     <li>
                         <a
-                            href="#"
+                            href="/mesta"
                             class="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0"
-                            >Transport</a
+                            >Lokacije</a
                         >
                     </li>
                     <li>
                         <a
-                            href="/mesta"
+                            href="#"
                             class="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0"
-                            >Mesta</a
+                            >Transport</a
                         >
                     </li>
                     <li>

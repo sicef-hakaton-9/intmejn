@@ -1,7 +1,7 @@
 <template>
     <a
         :href="href"
-        class="hover:bg-button w-80 p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 transition duration-300 ease-in-out"
+        class="hover:bg-button w-80 h-40 p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 transition duration-300 ease-in-out"
         ><div class="flex items-center mb-2">
             <slot name="icon"></slot>
             <h5

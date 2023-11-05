@@ -1,7 +1,7 @@
 <template>
     <div class="flex flex-col items-center gap-2 p-4">
         <p class="text-3xl font-bold text-gray-900 dark:text-white mb-4">
-            Mesta
+            Lokacije
         </p>
         <div class="flex gap-2">
             <Link
