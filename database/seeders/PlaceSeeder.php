@@ -20,7 +20,7 @@ class PlaceSeeder extends Seeder
         PlaceType::create(['id' => 2, 'name' => 'Restoran']);
         PlaceType::create(['id' => 3, 'name' => 'Brza hrana']);
         PlaceType::create(['id' => 4, 'name' => 'Tržni centar']);
-        PlaceType::create(['id' => 5, 'name' => 'Znamentiost']);
+        PlaceType::create(['id' => 5, 'name' => 'Znamenitost']);
         PlaceType::create(['id' => 6, 'name' => 'Klub']);
         PlaceType::create(['id' => 7, 'name' => 'Javna površina']);
         Place::create([

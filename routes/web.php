@@ -26,6 +26,11 @@ Route::get('/dogadjaji/{event}', [App\Http\Controllers\EventController::class, '
 Route::get('/znamenitosti', [App\Http\Controllers\PlaceController::class, 'index'])->name('places.index');
 Route::get('/znamenitosti/{place}', [App\Http\Controllers\PlaceController::class, 'show'])->name('places.show');
 
+Route::get('/map', function () {
+    $places = App\Models\Place::with('place_type')->get();
+    return view('map', compact('places'));
+});
+
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');

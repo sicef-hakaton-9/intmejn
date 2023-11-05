@@ -89,7 +89,9 @@
             </HomepageCard>
         </ul>
     </div>
-    <div class="h-64 bg-secondary"></div>
+    <div class="h-64 bg-secondary">
+        <HomepageMap />
+    </div>
 </template>
 
 <script setup>
@@ -98,4 +100,5 @@ import Bus from "~icons/mdi/bus";
 import TicketOutline from "~icons/ion/ticket-outline";
 import TownHall from "~icons/maki/town-hall";
 import SchoolOutline from "~icons/mdi/school-outline";
+import HomepageMap from "@/Components/Homepage/Map.vue";
 </script>
