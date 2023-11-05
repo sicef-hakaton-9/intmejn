@@ -1,4 +1,4 @@
-# Aplikacija „<naziv_aplikacije>”
+# Aplikacija „CITYZEN”
 
 ## Tim „IntMejn”
 
@@ -15,25 +15,31 @@ Učesnici su imali zadatak da naprave **aplikaciju na temu „softverska podršk
 
 ## Opis aplikacije
 
-<!--
-Na primer odgovoriti na neka od sledeća pitanja:
-Šta radi aplikacija? Koji je njen cil? Šta pruža korisniku? Kako rešava zadat problem? Koje su njene mogućnosti?
--->
+Aplikacija pruža lako dostupne informacije vezane za neki grad, kao što su lokacije uslužnih objekata, znamenitih objekata, spisak predstojećih događaja.
+Dodatna mogućnost je da se stanovnik grada prijavi kao vodič, tako da gost koji želi da obiđe grad može da izabere i unajmi vodiča.
 
 ## Tehnologije
-
-<!--
-- JavaScript
+- VueJS (Javascript)
+- Laravel (PHP)
 - MySQL
-- PHP
-- ...
--->
 
 ## Uputstvo za pokretanje
 
-<!--
-Kratke instrukcije za pokretanje aplikacije, kao i šta je potrebno instalirati i podesiti radi njenog pokretanja.
--->
+Instalacija dependencies
+```
+composer install
+```
+```
+npm install && npm run build
+```
+Migracija baze
+```
+php artisan migrate --seed
+```
+Pokretanje servera
+```
+php artisan serve
+```
 
 ----------
 Više o SICEF-u, organizatoru SICEF Hakatona, možete saznati na sajtu: https://sicef.info. 
